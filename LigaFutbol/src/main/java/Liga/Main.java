@@ -2,6 +2,13 @@ package Liga;
 
 public class Main {
     public static void main(String[] args) {
+        //Sobrecarga
+        Operaciones op = new Operaciones(10,20);
+        Operaciones op2 = new Operaciones(20.2,10.2);
+
+        System.out.println(op.suma(10,20));
+        System.out.println(op2.suma(10.5,20.5));
+        //
         Jugador jugador1 = new Jugador(10,"Cuadrado");
         Equipo equipo1 = new Equipo(100,"Deportivo Tapitas");
 

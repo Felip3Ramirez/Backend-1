@@ -13,11 +13,12 @@ public class Equipo {
         this.ciudad=ciudad;
         this.mascota=mascota;
     }
+
     public String mostrarEquipo(){
         return "El equipo "+nombreEquipo+" es local en la ciudad de "+ciudad+" tiene "+titulos+" titulos en sus vitrinas y su mascota es "+mascota;
     }
     public void contratarJugadores (){
-        System.out.println("El equipo contrata jugadores");
+        System.out.println("El equipo "+nombreEquipo+" contrata jugadores");
     }
     public void generarEntrenamientos(){
         System.out.println("el equipo genera entrenamientos");

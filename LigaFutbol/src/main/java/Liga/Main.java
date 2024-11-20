@@ -11,6 +11,7 @@ public class Main {
         System.out.println(equipo1.mostrarEquipo());
         jugador1.mostrarDatos();
         equipo1.mostrarEquipo();
+        equipo1.contratarJugadores();
 
     }
 }

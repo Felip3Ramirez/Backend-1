@@ -1,0 +1,18 @@
+curso de java se orientada a objetos
+curso de java se: sql y bases de datos
+
+17 diciembre subir los certificados de los cursos
+
+
+MENU
+opcion cliente o administrador
+
+si es cliente registrarse, ver opciones, comprar
+
+login
+
+si es administrador crear opciones,ver compras, ver registros usuario
+
+el lunes con conocimiento de los array list
+montarlo JDBC y conectarlo con my sql 
+para bonificacion

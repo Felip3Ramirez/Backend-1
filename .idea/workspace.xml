@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="86ce3aee-2e9b-4893-a313-a6816f95a332" name="Changes" comment="" />
+    <list default="true" id="86ce3aee-2e9b-4893-a313-a6816f95a332" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/HerenciasFiguras/src/main/java/FigurasGeometricas/Figura.java" beforeDir="false" afterPath="$PROJECT_DIR$/HerenciasFiguras/src/main/java/FigurasGeometricas/Figura.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

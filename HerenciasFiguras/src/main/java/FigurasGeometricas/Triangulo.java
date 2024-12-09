@@ -20,6 +20,14 @@ public class Triangulo extends Figura{
         return base*getNumLado();
     }
 
+    @Override
+    public String toString() {
+        return "El Triangulo tiene " +super.getNumLado()+
+                "base=" + base +
+                ", altura=" + altura +
+                '}';
+    }
+
     public int getBase() {
         return base;
     }

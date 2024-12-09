@@ -20,6 +20,14 @@ public class Rectangulo extends Figura{
         return (lado1+lado2)*2;
     }
 
+    @Override
+    public String toString() {
+        return "El Rectangulo tiene" +super.getNumLado()+
+                "lado1=" + lado1 +
+                ", lado2=" + lado2 +
+                '}';
+    }
+
     public int getLado1() {
         return lado1;
     }

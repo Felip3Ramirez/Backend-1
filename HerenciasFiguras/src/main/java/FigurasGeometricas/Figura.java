@@ -14,6 +14,12 @@ public class Figura {
         return 0;
     }
 
+    @Override
+    public String toString() {
+        return "La Figura tiene{" +
+                "lados" + numLado ;
+    }
+
     public int getNumLado() {
         return numLado;
     }

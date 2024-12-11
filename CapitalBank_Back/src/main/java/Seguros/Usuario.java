@@ -14,6 +14,8 @@ public class Usuario {
         this.email = email;
         this.telefono = telefono;
     }
+
+
     public void mostrarInfo(){
         Connection cb = ConexionBD.conectarBD("capitalBank_bd");
         Consulta.Consultar(cb);

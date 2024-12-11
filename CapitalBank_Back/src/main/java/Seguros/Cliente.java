@@ -12,6 +12,25 @@ public class Cliente extends Usuario {
 
     public static void comprarProducto(Connection con){
 
+
+
+    }
+    public static void registro (Connection con,String nombre,String contrasena,String email,String telefono){
+        String sql ="insert into cliente(nombre,contrasena,email,telefono) values('"+nombre+"','"+contrasena+"','"+email+"','"+telefono+"')";
+        Statement statement;
+        int result;
+
+        try {
+            statement =con.createStatement();
+            result = statement.executeUpdate(sql);
+            if (result==1){
+                System.out.println("Los datos fueron ingresados correctamente");
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
+        }
+
     }
     public static void verProductos(Connection con){
         String sql ="SELECT * FROM seguros";
@@ -44,4 +63,5 @@ public class Cliente extends Usuario {
             throw new RuntimeException(e);
         }
     }
+
 }

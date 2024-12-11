@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.util.Scanner;
 
 public class Main {
+   static Connection cb = ConexionBD.conectarBD("capitalBank_bd");
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
     menu();
@@ -22,7 +23,6 @@ public class Main {
             opc = sc.nextInt();
             switch (opc){
                 case 1:
-                    Connection cb = ConexionBD.conectarBD("capitalBank_bd");
                     Cliente.verProductos(cb);
                     ConexionBD.desconexion(cb);
 
@@ -31,6 +31,18 @@ public class Main {
                 case 2:
                     break;
                 case 3:
+                    System.out.println("REGISTRO DE CLIENTES\n" +
+                            "========================================");
+                    System.out.println("Ingrese Nombre");
+                    String nombre = sc.next();
+                    System.out.println("Ingrese Contraseña");
+                    String contrasena = sc.next();
+                    System.out.println("Ingrese Email");
+                    String email = sc.next();
+                    System.out.println("Ingrese Telefono");
+                    String telefono = sc.next();
+                    Cliente.registro(cb,nombre,contrasena,email,telefono);
+
                     break;
                 case 4:
                     break;

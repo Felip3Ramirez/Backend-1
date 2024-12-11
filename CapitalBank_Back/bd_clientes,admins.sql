@@ -14,4 +14,12 @@ CREATE TABLE administrador (
     email VARCHAR(50) ,
     telefono bigint
 );
+CREATE TABLE seguros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tipo VARCHAR(50),
+    compania VARCHAR(100) ,
+    costo DECIMAL(10, 2),
+    fecha_inicio DATE ,
+    fecha_fin DATE 
+);
 

@@ -1,43 +1,39 @@
 package Seguros;
 
+import java.util.Scanner;
+
 public class Main {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
 
-        Consultas consulta = new Consultas();
 
+    }
+    public static void menu(){
+        int opc = 0;
+        while (opc!=4){
+            System.out.println("MENU PRINCIPAL");
+            System.out.println("======================");
+            System.out.println("1.LOGIN CLIENTE\n" +
+                    "2.LOGIN ADMINISTRADOR\n" +
+                    "3.REGISTRO\n" +
+                    "4.SALIR");
 
-        Cliente cliente = new Cliente("Juan Pérez", "juan@example.com", "123456789", "POL123456");
-        consulta.agregarUsuario(cliente);
+            opc = sc.nextInt();
+            switch (opc){
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("OPCION INVALIDA");
+                    break;
+            }
 
-
-        Administrador administrador = new Administrador("Ana Gómez", "ana@example.com", "987654321", "EMP001");
-        consulta.agregarUsuario(administrador);
-
-
-        Usuario usuarioCliente = consulta.obtenerUsuario(1); // Suponiendo que el ID del cliente es 1
-        if (usuarioCliente != null) {
-            System.out.println("Información del Cliente:");
-            usuarioCliente.mostrarInfo();
         }
-
-
-        Usuario usuarioAdmin = consulta.obtenerUsuario(2); // Suponiendo que el ID del administrador es 2
-        if (usuarioAdmin != null) {
-            System.out.println("\nInformación del Administrador:");
-            usuarioAdmin.mostrarInfo();
-        }
-
-
-       /* Cliente cliente = new Cliente("Juan Pérez", "juan@example.com", "123456789", "EM1234");
-        Administrador administrador = new Administrador("Ana Gómez", "ana@example.com", "987654321", "Admin001");
-
-        System.out.println("Información del Cliente:");
-        cliente.mostrarInfo();
-
-        System.out.println("\nInformación del Administrador:");
-        administrador.mostrarInfo();*/
-
-
     }
 
 }

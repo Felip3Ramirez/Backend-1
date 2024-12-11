@@ -1,16 +1,23 @@
 package Seguros;
 
+import java.sql.Connection;
+
 public class Usuario {
     private String nombre;
+    private String contrasena;
     private String email;
     private String telefono;
 
-    public Usuario(String nombre, String email, String telefono) {
+    public Usuario(String nombre, String contrasena, String email, String telefono) {
         this.nombre = nombre;
+        this.contrasena = contrasena;
         this.email = email;
         this.telefono = telefono;
     }
-
+    public void mostrarInfo(){
+        Connection cb = ConexionBD.conectarBD("capitalBank_bd");
+        Consulta.Consultar(cb,null);
+    }
 
     public String getNombre() {
         return nombre;
@@ -18,6 +25,14 @@ public class Usuario {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 
     public String getEmail() {
@@ -34,12 +49,5 @@ public class Usuario {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
-    }
-
-
-    public void mostrarInfo() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Email: " + email);
-        System.out.println("Teléfono: " + telefono);
     }
 }

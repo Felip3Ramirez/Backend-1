@@ -16,7 +16,7 @@ public class Usuario {
     }
     public void mostrarInfo(){
         Connection cb = ConexionBD.conectarBD("capitalBank_bd");
-        Consulta.Consultar(cb,null);
+        Consulta.Consultar(cb);
     }
 
     public String getNombre() {

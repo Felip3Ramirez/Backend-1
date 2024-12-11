@@ -6,8 +6,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Consulta {
-    public static void Consultar(Connection con,String tipo){
-        String sql ="SELECT * FROM "+tipo;
+    public static void Consultar(Connection con){
+        String sql ="SELECT * FROM cliente";
         Statement statement;
         ResultSet rs;
         int id;

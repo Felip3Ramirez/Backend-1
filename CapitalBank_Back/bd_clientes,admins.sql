@@ -23,3 +23,8 @@ CREATE TABLE seguros (
     fecha_fin DATE 
 );
 
+INSERT INTO seguros (tipo, compania, costo, fecha_inicio, fecha_fin) VALUES
+('Salud', 'Companía A', 150.00, '2023-01-01', '2024-01-01'),
+('Auto', 'Companía B', 200.00, '2023-02-01', '2024-02-01'),
+('Vida', 'Companía C', 250.00, '2023-03-01', '2024-03-01'),
+('Hogar', 'Companía D', 100.00, '2023-04-01', '2024-04-01');

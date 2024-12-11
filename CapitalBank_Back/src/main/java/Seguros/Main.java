@@ -1,16 +1,17 @@
 package Seguros;
 
+import java.sql.Connection;
 import java.util.Scanner;
 
 public class Main {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-
+    menu();
 
     }
     public static void menu(){
         int opc = 0;
-        while (opc!=4){
+        while (opc != 4){
             System.out.println("MENU PRINCIPAL");
             System.out.println("======================");
             System.out.println("1.LOGIN CLIENTE\n" +
@@ -21,6 +22,11 @@ public class Main {
             opc = sc.nextInt();
             switch (opc){
                 case 1:
+                    Connection cb = ConexionBD.conectarBD("capitalBank_bd");
+                    Cliente.verProductos(cb);
+                    ConexionBD.desconexion(cb);
+
+
                     break;
                 case 2:
                     break;

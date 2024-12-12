@@ -19,12 +19,12 @@ CREATE TABLE seguros (
     tipo VARCHAR(50),
     compania VARCHAR(100) ,
     costo DECIMAL(10, 2),
-    fecha_inicio DATE ,
-    fecha_fin DATE 
+    fecha_inicio varchar (50) ,
+    fecha_fin varchar(50) 
 );
 
 INSERT INTO seguros (tipo, compania, costo, fecha_inicio, fecha_fin) VALUES
-('Salud', 'Companía A', 150.00, '2023-01-01', '2024-01-01'),
-('Auto', 'Companía B', 200.00, '2023-02-01', '2024-02-01'),
-('Vida', 'Companía C', 250.00, '2023-03-01', '2024-03-01'),
-('Hogar', 'Companía D', 100.00, '2023-04-01', '2024-04-01');
+('Salud', 'CompanÃ­a A', 150.00, '2023-01-01', '2024-01-01'),
+('Auto', 'CompanÃ­a B', 200.00, '2023-02-01', '2024-02-01'),
+('Vida', 'CompanÃ­a C', 250.00, '2023-03-01', '2024-03-01'),
+('Hogar', 'CompanÃ­a D', 100.00, '2023-04-01', '2024-04-01');

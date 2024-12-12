@@ -8,7 +8,7 @@ public class ConexionBD {
         Connection conectar=null;
         String host ="jdbc:mysql://localhost:3306/";
         String user ="root";
-        String pass ="";
+        String pass ="root";
 
 
         System.out.println("Conectando.....");

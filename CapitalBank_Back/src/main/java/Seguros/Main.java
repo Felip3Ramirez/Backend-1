@@ -31,15 +31,7 @@ public class Main {
                     System.out.println("Ingrese Contraseña");
                     String contrasenaAdm = sc.next();
 
-                    Administrador administrador = new Administrador();
-                    Administrador.login(cb,emailAdm,contrasenaAdm,administrador );
-
-
-
-
-//                    Cliente.verProductos(cb);
-//                    ConexionBD.desconexion(cb);
-
+                    Administrador.login(cb,emailAdm,contrasenaAdm);
 
                     break;
                 case 2:
@@ -52,8 +44,7 @@ public class Main {
                     System.out.println("Ingrese Contraseña");
                     String contrasenaCli = sc.next();
                     Cliente.login(cb,emailCli,contrasenaCli);
-
-
+                    
                     break;
                 case 3:
                     System.out.println("REGISTRO DE CLIENTES\n" +
